@@ -12,6 +12,14 @@ document.getElementById("loadDaily").addEventListener("click",()=>{
  items.forEach((v,i)=>{const b=document.createElement("button");b.type="button";b.textContent=(i+1)+". "+v;b.addEventListener("click",()=>{current=i;document.getElementById("line").textContent=v;document.getElementById("note").textContent="選んだ一言をInstagramへ共有できます。";});choices.appendChild(b);});
  document.getElementById("note").textContent="候補をタップして選んでください。";
 });
+const linkedCandidates=new URLSearchParams(location.search).getAll("q").map(v=>v.trim()).filter(v=>v.length>=5&&v.length<=200).slice(0,5);
+if(linkedCandidates.length){
+ const field=document.getElementById("dailyText");
+ field.value=linkedCandidates.map((v,i)=>(i+1)+". "+v).join("\n");
+ document.getElementById("loadDaily").click();
+ document.getElementById("daily").open=true;
+ document.getElementById("note").textContent="候補をタップして選んでください。";
+}
 const line=document.getElementById("line");document.getElementById("next").addEventListener("click",()=>{let n;do{n=Math.floor(Math.random()*lines.length)}while(n===current&&lines.length>1);current=n;line.classList.remove("pop");void line.offsetWidth;line.textContent=lines[current];line.classList.add("pop");void 0});
 const shareButton=document.getElementById("share");
 const saveButton=document.getElementById("save");
