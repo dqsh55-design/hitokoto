@@ -1,5 +1,48 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f7f6f2"><title>無意味な一言。</title>
-<style>*{box-sizing:border-box}body{margin:0;background:#f7f6f2;color:#30302e;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",sans-serif}main{max-width:640px;min-height:100dvh;margin:auto;display:flex;flex-direction:column;padding:30px 24px max(30px,env(safe-area-inset-bottom))}header{font-size:14px;letter-spacing:.12em;color:#777}section{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:28px}h1{font-size:clamp(24px,6.5vw,37px);line-height:1.7;font-weight:600;letter-spacing:.04em;margin:0;white-space:pre-wrap}small{color:#999;font-size:12px}footer{display:grid;gap:12px}button{border:0;border-radius:16px;min-height:58px;font-size:17px;font-weight:650;cursor:pointer}#next{background:#30302e;color:white}#copy{background:transparent;color:#777;border:1px solid #ddd;min-height:48px;font-size:14px}#note{text-align:center;color:#aaa;font-size:11px;margin:8px 0 0}.pop{animation:appear .3s ease}@keyframes appear{from{opacity:.1;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}</style></head><body><main><header>無意味な一言。</header><section><h1 id="line" aria-live="polite">冷蔵庫の奥にいる納豆は、もう家族だと思う。</h1><small>特に意味はありません。</small></section><footer><button id="next">もう一言</button><button id="copy">この一言をコピー</button><p id="note">役に立つことは、何もありません。</p></footer></main><script>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f7f6f2"><title>今日のチャッピー。</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f7f6f2;color:#30302e;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",sans-serif}main{max-width:640px;min-height:100dvh;margin:auto;display:flex;flex-direction:column;padding:30px 24px max(30px,env(safe-area-inset-bottom))}header{font-size:14px;letter-spacing:.12em;color:#777}section{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:28px}h1{font-size:clamp(24px,6.5vw,37px);line-height:1.7;font-weight:600;letter-spacing:.04em;margin:0;white-space:pre-wrap}small{color:#999;font-size:12px}footer{display:grid;gap:12px}button{border:0;border-radius:16px;min-height:58px;font-size:17px;font-weight:650;cursor:pointer}#next{background:#30302e;color:white}#share{background:#e8e6df;color:#30302e}#copy{background:transparent;color:#777;border:1px solid #ddd;min-height:48px;font-size:14px}#note{text-align:center;color:#aaa;font-size:11px;margin:8px 0 0}.pop{animation:appear .3s ease}@keyframes appear{from{opacity:.1;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}</style></head><body><main><header>今日のチャッピー。</header><section><h1 id="line" aria-live="polite">冷蔵庫の奥にいる納豆は、もう家族だと思う。</h1><small>特に意味はありません。</small></section><footer><button id="next">もう一言</button><button id="share">これに決めた！画像を作る</button><button id="copy">この一言をコピー</button><p id="note">今日の一言を選んで、Instagramへ。</p></footer></main><script>
 const lines=["冷蔵庫の奥にいる納豆は、もう家族だと思う。","昨日の自分に相談したら、今日も休めと言われた。","靴下の片方だけ、人生をやり直している。","エレベーターの閉ボタンに、少しだけ期待しすぎている。","消しゴムは、減るほど仕事ができる。","カレンダーをめくると、月がひとつ逃げていく。","おにぎりの三角形には、特に理由を聞かない。","傘を持って出た日は、雨が遠慮している。","充電が100％になると、なんとなく自分も元気になる。","カレーは二日目から急にベテランの顔をする。","月曜日は毎週、初対面のふりをしてくる。","ティッシュの最後の一枚には、妙な責任感がある。","リモコンは、探しているときだけ家具になる。","自動ドアが開くと、ちょっとだけ認められた気がする。","電子レンジの残り3秒は、意外と長い。","信号待ちの間だけ、人生を考えがちだ。","冷凍庫の氷は、全員同じ顔をしている。","スーパーのカゴを持つと、買う予定が増える。","目覚まし時計は、毎朝ちゃんと嫌われている。","新品のノートは、一行目がいちばん緊張する。","ポケットのレシートは、静かに歴史を作っている。","ペットボトルの最後の一口だけ、いつも忘れられる。","階段の最後の一段には、達成感がある。","鏡に映る自分は、いつも左右の意見が違う。","パンの耳は、名前のわりに何も聞いていない。","自販機の前では、急に選択肢が重くなる。","輪ゴムは、伸びしろだけで生きている。","洗濯機は、回りながら何を考えているのだろう。","新品の靴は、最初の水たまりを警戒している。","時計の秒針は、休憩を知らない。","お箸の片方だけでは、何も始まらない。","空のペットボトルは、急に軽い人になる。","雨の日のベンチは、誰にも期待していない。","メガネを探す人のメガネは、たいてい近くにいる。","エアコンのリモコンには、季節ごとの繁忙期がある。","プリンは、揺れているだけで楽しそうだ。","靴べらは、毎日誰かの背中を押している。","引き出しの奥には、いつか使うという未来が詰まっている。","コンビニの袋は、家に着くと急に役目を終える。","明日の予定は、今日の夜だけ立派になる。"];
-let current=0;const line=document.getElementById("line");document.getElementById("next").addEventListener("click",()=>{let n;do{n=Math.floor(Math.random()*lines.length)}while(n===current&&lines.length>1);current=n;line.classList.remove("pop");void line.offsetWidth;line.textContent=lines[current];line.classList.add("pop");document.getElementById("copy").textContent="この一言をコピー"});document.getElementById("copy").addEventListener("click",async()=>{try{await navigator.clipboard.writeText(lines[current]);document.getElementById("copy").textContent="コピーしました ✓"}catch(e){document.getElementById("copy").textContent="コピーできませんでした"}});</script></body></html>
+let current=0;const line=document.getElementById("line");document.getElementById("next").addEventListener("click",()=>{let n;do{n=Math.floor(Math.random()*lines.length)}while(n===current&&lines.length>1);current=n;line.classList.remove("pop");void line.offsetWidth;line.textContent=lines[current];line.classList.add("pop");document.getElementById("copy").textContent="この一言をコピー"});document.getElementById("copy").addEventListener("click",async()=>{try{await navigator.clipboard.writeText(lines[current]);document.getElementById("copy").textContent="コピーしました ✓"}catch(e){document.getElementById("copy").textContent="コピーできませんでした"}});
+const shareButton=document.getElementById("share");
+shareButton.addEventListener("click",async()=>{
+  shareButton.disabled=true;shareButton.textContent="画像を作成中…";
+  try{
+    const canvas=document.createElement("canvas");canvas.width=1080;canvas.height=1350;
+    const ctx=canvas.getContext("2d");
+    ctx.fillStyle="#f7f6f2";ctx.fillRect(0,0,1080,1350);
+    ctx.fillStyle="#777";ctx.font='34px -apple-system, "Hiragino Kaku Gothic ProN", sans-serif';
+    ctx.fillText("今日のチャッピー。",94,112);
+    ctx.fillStyle="#30302e";ctx.textAlign="center";
+    const message=lines[current];
+    const maxWidth=880;
+    function wrap(fontSize){
+      ctx.font='600 '+fontSize+'px -apple-system, "Hiragino Kaku Gothic ProN", sans-serif';
+      const result=[];let row="";
+      for(const char of message){
+        if(ctx.measureText(row+char).width>maxWidth&&row){result.push(row);row=char;}else{row+=char;}
+      }
+      if(row)result.push(row);
+      return result;
+    }
+    let size=68,rows=wrap(size);
+    while((rows.length*size*1.7>850||rows.length>7)&&size>38){size-=2;rows=wrap(size);}
+    ctx.font='600 '+size+'px -apple-system, "Hiragino Kaku Gothic ProN", sans-serif';
+    const lh=size*1.7;const y=675-(rows.length-1)*lh/2;
+    rows.forEach((t,i)=>ctx.fillText(t,540,y+i*lh));
+    ctx.fillStyle="#999";ctx.font='27px -apple-system, sans-serif';
+    ctx.fillText("特に意味はありません。",540,1150);
+    const blob=await new Promise(resolve=>canvas.toBlob(resolve,"image/png"));
+    if(!blob)throw Error("画像生成に失敗");
+    const file=new File([blob],"kyouno-chappy.png",{type:"image/png"});
+    if(navigator.canShare&&navigator.canShare({files:[file]})){
+      await navigator.share({files:[file]});
+    }else{
+      const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=file.name;a.click();
+      setTimeout(()=>URL.revokeObjectURL(a.href),30000);
+      alert("画像を保存しました。Instagramから写真を選んで投稿してください。");
+    }
+  }catch(err){
+    if(err.name!=="AbortError")alert("共有できませんでした。Safariで開いてもう一度お試しください。");
+  }finally{shareButton.disabled=false;shareButton.textContent="これに決めた！画像を作る";}
+});
+</script></body></html>
